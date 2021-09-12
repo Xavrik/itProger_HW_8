@@ -41,9 +41,8 @@ public class Controller implements Initializable {
 
     @FXML
     void SetOnKeyReleased(KeyEvent event) {
-        
-
-
+        if(numb_in.getCharacters().length() > 0)
+            getnumb(numb_in.getText());
     }
 
     String num = "";
