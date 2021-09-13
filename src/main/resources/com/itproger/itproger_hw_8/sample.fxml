@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.ChoiceBox?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="235.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.itproger.itproger_hw_8.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="235.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.itproger.itproger_hw_8.Controller">
    <children>
-      <TextField fx:id="numb_in" alignment="TOP_LEFT" layoutX="12.0" layoutY="77.0" onAction="#SetOnKeyReleased" onKeyReleased="#SetOnKeyReleased" opacity="0.43" prefHeight="27.0" prefWidth="210.0" style="-fx-border-radius: 10; -fx-border-color: #808080; -fx-background-color: transparent;" text="Введите число:" AnchorPane.leftAnchor="12.0">
+      <TextField fx:id="numb_in" alignment="TOP_LEFT" layoutX="12.0" layoutY="77.0" onKeyReleased="#SetOnKeyReleased" opacity="0.43" prefHeight="27.0" prefWidth="210.0" style="-fx-border-radius: 10; -fx-border-color: #808080; -fx-background-color: transparent;" text="Введите число:" AnchorPane.leftAnchor="12.0">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
@@ -24,7 +21,7 @@
             </Text>
          </children>
       </AnchorPane>
-      <ChoiceBox id="choice_box" fx:id="choice_box" layoutX="12.0" layoutY="118.0" prefHeight="25.0" prefWidth="116.0" style="-fx-background-radius: 5;" value="Тонны" AnchorPane.leftAnchor="12.0" />
+      <ChoiceBox id="choice_box" fx:id="choice_box" layoutX="12.0" layoutY="118.0" onKeyReleased="#SetOnKeyReleased" prefHeight="25.0" prefWidth="116.0" style="-fx-background-radius: 5;" value="Тонны" AnchorPane.leftAnchor="12.0" />
       <Text fill="DIMGRAY" layoutX="12.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Значение в тоннах:" wrappingWidth="143.13671875" AnchorPane.leftAnchor="12.0" />
       <Label fx:id="lb_ton" layoutX="12.0" layoutY="178.0" prefHeight="17.0" prefWidth="109.0" text="0" textFill="DIMGRAY" AnchorPane.leftAnchor="12.0" />
       <Text fill="DIMGRAY" layoutX="12.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Значение в килограммах:" wrappingWidth="143.13671875" AnchorPane.leftAnchor="12.0" />
